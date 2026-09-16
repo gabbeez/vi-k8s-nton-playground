@@ -1,0 +1,13 @@
+---
+- name: Multi-Tier Infrastructure Verification Blueprint
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Verify Web Infrastructure configuration parameters
+      debug:
+        msg: "Configuring Web Tier at target IP: 192.168.49.2"
+
+    - name: Verify Database Infrastructure configuration parameters
+      debug:
+        msg: "Configuring Database Tier at target IP: 192.168.49.99"
+
